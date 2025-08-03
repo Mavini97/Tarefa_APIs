@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alata&family=Archivo:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <title>Catálogo de Produtos</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="camisa-lobo"><img src="/imgs/shirt_svgrepo.com.png" alt="Logo camisa" class="logo" /></div>
+      <h1>Roup{IN}nha</h1>
+      <div class="admin-button">
+        <img src="/imgs/user-admin_svgrepo.com.png" alt="Ícone admin" />
+        <a href="admin.html" >
+        Modo administrador
+        </a>
+      </div>
+    </div>  
+  </header>
+
+  <main class="principal">
+
+    <div class="add-button"><a href="add.html">+ ADICIONAR</a></div>
+    <section id="product-list"></section>
+
+    <div class="pagination">
+      <button id="prev-btn" class="nav-btn">&lt;</button>
+      <div id="page-info"></div>
+      <button id="next-btn" class="nav-btn">&gt;</button>
+    </div>
+    
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-left">
+        <h3>Endereço</h3>
+        <p>AV. Milton Tavares de Souza,<br>
+        s/n - Sala 115 B - Boa Viagem,<br>
+        Niterói - RJ <br>
+        CEP: 24210-315</p>
+      </div>
+
+      <div class="footer-right">
+        <h3>Fale conosco</h3>
+        <p>contato@injunior.com.br</p>
+        <div class="icones">
+          <img src="/imgs/mdi_instagram.png" alt="Instagram">
+          <img src="/imgs/ri_facebook-fill.png" alt="Facebook">
+          <img src="/imgs/ri_linkedin-fill.png" alt="Linkedin">
+        </div>
+      </div>
+    </div>
+    <div class="direitos">
+      <p>© Copyright 2025. IN Junior. Todos os direitos reservados. Niterói, Brasil.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

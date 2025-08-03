@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Editar Produto</title>
+  <link href="https://fonts.googleapis.com/css2?family=Alata&family=Archivo:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="wrapper">
+    <header>
+      <div class="container">
+        <div class="camisa-lobo"><img src="/imgs/shirt_svgrepo.com.png" alt="Logo camisa" class="logo" /></div>
+        <h1>Roup{IN}nha</h1>
+        <div class="admin-button">
+          <img src="/imgs/user-admin_svgrepo.com.png" alt="Ícone admin" />
+          <a href="admin.html">
+            Modo administrador
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main class="edit">
+      <h1>Editar peça no estoque</h1>
+      <form id="edit-form">
+        <div class="form-container">
+
+          <div class="form-left">
+
+            <div class="left-1">
+              <label for="name">Nome da peça</label>
+              <input type="text" id="name" name="name" placeholder="Nome do Produto" required />
+            </div>
+
+            <div class="left-2">
+              <label for="image">Image</label>
+              <input type="text" id="image" name="image" placeholder="URL da Imagem" required />
+            </div>
+
+            <div class="left-3">
+              <label for="description">Descrição</label>
+              <textarea id="description" name="description" placeholder="Descrição" required></textarea>
+            </div>
+
+          </div>
+
+          <div class="form-right">
+
+            <div class="right-1">
+              <label for="price">Preço</label>
+              <input type="number" id="price" name="price" placeholder="Preço" step="0.01" min="0" required />
+            </div>
+
+            <div class="right-2">
+              <label for="category">Categorias</label>
+              <input type="text" id="category" name="category" placeholder="Categoria" required />
+            </div>
+
+            <div class="right-3">
+              <label for="rating">Avaliação</label>
+              <input type="number" id="rating" name="rating" placeholder="Avaliação (0 a 5)" min="0" max="5" step="0.1" required />
+            </div>
+
+            <div class="right-4">
+              <label for="inStock">
+                <input type="checkbox" id="inStock" name="inStock" /> Em estoque
+              </label>
+            </div>
+
+          </div>
+
+        </div>
+
+        <button type="submit">Editar Peça</button>
+      </form>
+    </main>
+
+    <footer>
+      <div class="footer-container">
+        <div class="footer-left">
+          <h3>Endereço</h3>
+          <p>AV. Milton Tavares de Souza,<br>
+          s/n - Sala 115 B - Boa Viagem,<br>
+          Niterói - RJ <br>
+          CEP: 24210-315</p>
+        </div>
+        <div class="footer-right">
+          <h3>Fale conosco</h3>
+          <p>contato@injunior.com.br</p>
+          <div class="icones">
+            <img src="/imgs/mdi_instagram.png" alt="Instagram">
+            <img src="/imgs/ri_facebook-fill.png" alt="Facebook">
+            <img src="/imgs/ri_linkedin-fill.png" alt="Linkedin">
+          </div>
+        </div>
+      </div>
+      <div class="direitos">
+        <p>© Copyright 2025. IN Junior. Todos os direitos reservados. Niterói, Brasil.</p>
+      </div>
+    </footer>
+
+    <script src="edit.js"></script>
+  </div>
+</body>
+</html>

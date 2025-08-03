@@ -1,0 +1,458 @@
+/* Reset simples */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter";
+}
+
+hmtl, body {
+  background-color: #f3f3f3;
+  height: 100%;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+/* Header */
+
+header {
+  display: flex;
+  justify-content: center;
+  padding: 0 69px 0 61px;
+  background-color: #415FCE;
+  height: 139px;
+}
+
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.camisa-lobo {
+  width: 315px;
+}
+
+.camisa-lobo img{
+  width: 110px;
+  height: 99px;
+
+}
+
+.container h1 {
+font-size: 64px;
+font-weight: 400;
+}
+
+.admin-button{
+width: 315px;
+height: 60px;
+display: flex;
+align-items: center;
+gap: 21px;
+background-color: #1F9B5F;
+border-radius: 24px;
+}
+
+.admin-button img {
+  width: 40px;
+  height: 40px;
+  margin-left: 32px;
+}
+
+.admin-button a {
+  display: flex;
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+/* main*/
+
+.principal{
+  padding: 64px 69px 68px 61px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.add-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1310px;
+  height: 100px;
+  background-color: #1F9B5F;
+  border-radius: 8px;
+  margin-bottom: 64px;
+}
+
+.add-button a {
+  display: flex;
+  font-size: 40px;
+  font-weight: 700;
+  text-decoration: none;
+  color: white;
+  width: 1310px;
+  height: 100px;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Grade de produtos */
+#product-list {
+  display: grid;
+  grid-template-columns: repeat(3, 408px); /* fixo */
+  column-gap: 39px;
+  row-gap: 48px;
+  justify-content: center;
+
+}
+
+/* Cartão do produto */
+.card {
+  background-color: #243B98;
+  width: 408px;
+  height: 819px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 6px;
+  box-shadow: 4px 4px 12px rgba(0,0,0,0.7);
+
+}
+.superior {
+  width: 408px;
+  height: 588px;
+  position: relative;
+}
+
+.superior img {
+  width: 408px;
+  height: 588px;
+  object-fit: cover;
+  display: block;
+
+}
+
+.topo{
+  position: absolute;
+  display: flex;
+  top: 16px;
+  right: 16px;
+  left: 16px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nota{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 11px;
+}
+
+.nota p{
+  font-size: 36px;
+  font-weight: 600; 
+}
+
+.nota img{
+  width: 48px;
+  height: 48px;
+}
+
+.buttons {
+  display: flex;
+  width: 142px;
+  gap: 14px;
+}
+
+.buttons img{
+  width: 64px;
+  height: 64px;
+}
+
+.inferior {
+padding: 16px;
+height: 199px;
+display: flex;
+flex-wrap: wrap;
+align-content: space-between;
+}
+
+.nome{
+  width: 376px;
+}
+.nome h3 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #8CBF26;
+}
+
+.nome h4 {
+  font-size: 20px;
+  font-weight:500;
+  color:#ffffff;
+}
+#descricao {
+margin-top: 8px;
+margin-left: 48px;
+color: #ffffff;
+font-size: 14px;
+font-weight: 500;
+width: 300px;
+}
+
+.preco {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 40px;
+  font-weight: bold;
+  color: #8CBF26;
+  width: 376px;
+}
+
+.estoque {
+  font-size: 20px;
+}
+
+
+
+/* Paginação */
+.pagination {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 24px;
+  width: 288px;
+  height: 40px;
+  justify-content: space-between;
+}
+
+.nav-btn {
+  background: none;
+  border: none;
+  color: #1F9B5F; 
+  font-size: 40px;
+  align-content: center;
+  margin-bottom: 5px;
+}
+.page {
+  width: 32px;
+  height: 32px;
+  border: none;
+  border-radius: 50%;
+  background-color: #BDB7B6;
+  color: #F1EFFF;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+  line-height: 32px;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+#page-info {
+  display: flex;
+  gap: 8px;
+}
+
+.page.active {
+  background-color: green;
+  color: white;
+  border-color: green;
+}
+
+.page:hover,
+.nav-btn:hover {
+  background-color: #ddd;
+}
+
+.nav-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+/* Rodapé */
+footer {
+  background-color: #FCF7F8;
+  font-size: 14px;
+  height: 210px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 28px 69px 20px 70px;
+  height: 128px;
+  align-items: center;
+}
+.footer-container h3{
+  font-size: 24px;
+  font-weight: 500;
+  color: #4E8098;
+  font-family: "Roboto";
+}
+
+.footer-container p {
+  font-size: 20px;
+  font-weight: 400;
+  color: #274553;
+  font-family: "Roboto";
+}
+
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 302px;
+}
+
+.footer-right {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 302px;
+}
+
+.icones {
+  display: flex;
+  gap: 8px;
+}
+
+.icones img {
+  width: 30px;
+  height: 30px;
+}
+
+.direitos{
+  display: flex;
+  height: 34px;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 400;
+  color: #000000;
+  background-color: #415FCE;;
+}
+
+
+/*-------------------add.html------------------*/
+
+.add,
+.edit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 64px;
+  padding: 64px 0px 64px 0;
+  flex: 1;
+}
+
+.add h1,
+.edit h1{
+  font-size: 48px;
+  font-weight: 600;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 1209px;
+  height: 493px;
+  border-radius: 12px;
+  background-color: #247BB1;
+  gap: 59px;
+}
+
+.form-container {
+ display: flex;
+ justify-content: center;
+ gap: 102px;
+ height: 290px;
+ margin-top: 50px;
+
+}
+
+.form-container input,
+.form-container textarea {
+  width: 456px;
+  height: 48px;
+  border-radius: 12px;
+}
+
+.form-container label {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+form input,
+form textarea {
+  font-size: 16px;
+  font-weight: 400;
+  padding-left: 16px;
+  line-height: 48px;
+  color: #8D8888;
+  border: none;
+}
+
+
+.form-left,
+.form-right {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.form-left ::placeholder,
+.form-right ::placeholder {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+
+.left-1,
+.left-2,
+.left-3 {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.right-1,
+.right-2,
+.right-3 {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.right-4 {
+  margin-top: 70px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.right-4 input {
+  width: 30px;
+  height: 20px;
+}
+
+.add button,
+.edit button {
+  width: 167px;
+  height: 45px;
+  background-color: #1F9B5F;
+  color: #FFFFFF;
+  font-size: 24px;
+  font-weight: 500;
+  border: none;
+  border-radius: 12px;
+  position: relative;
+}
