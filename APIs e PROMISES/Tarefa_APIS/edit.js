@@ -84,5 +84,5 @@ form.addEventListener("submit", async (e) => {
   }
 });
 
-// Inicia o processo
 fetchProduct();
+
